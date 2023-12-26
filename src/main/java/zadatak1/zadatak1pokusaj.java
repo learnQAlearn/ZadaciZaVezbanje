@@ -10,8 +10,18 @@ import java.util.Scanner;
 public class zadatak1pokusaj {
     public static void main(String[] args) {
 
+        Random random = new Random();
+        String color;
+        boolean randomRorB = random.nextBoolean();
+        
+        if (randomRorB) {
+            color = "R";
+        } else {
+            color = "B";
+        }
+
         int initialStake = 1000;
-        String color = "R"; // nemam trenutno ideju kako da mi izbacicuje nasumicno R ili B
+        // nemam trenutno ideju kako da mi izbacicuje nasumicno R ili B
         Scanner sc = new Scanner(System.in);
         String colorFromUser = "";
 
@@ -23,6 +33,7 @@ public class zadatak1pokusaj {
                 System.out.println("You choose to end the game. ");
                 break;
             }
+
             System.out.println("Input stake: ");
             int stakeFromUser = sc.nextInt();
 
