@@ -10,16 +10,11 @@ import java.util.Scanner;
 public class zadatak1pokusaj {
     public static void main(String[] args) {
 
-        Random random = new Random();
-
         int initialStake = 1000;
-
         String color = "R"; // nemam trenutno ideju kako da mi izbacicuje nasumicno R ili B
-
-
         Scanner sc = new Scanner(System.in);
-
         String colorFromUser = "";
+
         while (initialStake > 0) {
 
             System.out.println("Input color: ");
